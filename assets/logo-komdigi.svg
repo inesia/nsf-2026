@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 96" role="img" aria-label="KOMDIGI">
+  <rect x="18" y="22" width="16" height="16" fill="#008e96"/>
+  <rect x="36" y="22" width="16" height="16" fill="#29234f"/>
+  <rect x="54" y="22" width="16" height="16" fill="#282450"/>
+  <rect x="18" y="40" width="16" height="16" fill="#29234f"/>
+  <rect x="36" y="40" width="16" height="16" fill="#008e96"/>
+  <rect x="54" y="40" width="16" height="16" fill="#181832"/>
+  <rect x="72" y="40" width="16" height="16" fill="#007c85"/>
+  <rect x="36" y="58" width="16" height="16" fill="#181832"/>
+  <rect x="54" y="58" width="16" height="16" fill="#282450"/>
+  <rect x="72" y="58" width="16" height="16" fill="#008e96"/>
+  <text x="108" y="42" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#181832">KOMDIGI</text>
+  <text x="108" y="58" font-family="Arial, Helvetica, sans-serif" font-size="7.5" fill="#69718a">Kementerian Komunikasi dan</text>
+  <text x="108" y="70" font-family="Arial, Helvetica, sans-serif" font-size="7.5" fill="#69718a">Digital Republik Indonesia</text>
+</svg>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#29234f">
+  <meta name="description" content="Pembicara Media Sustainability Forum 2026 — keynote dan panel 2–3 Desember 2026.">
+  <title>Pembicara — MSF 2026</title>
+  <link rel="preload" href="assets/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/tailwind.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased is-speakers">
+  <a href="#utama" class="skip-link">Lewati ke konten</a>
+
+  <header class="site-header">
+    <div class="shell">
+      <a href="index.html" class="brand-logo" aria-label="MSF 2026 — Beranda">
+        <img src="assets/logo.webp" width="492" height="92" alt="MSF 2026 — Media Sustainability Forum">
+      </a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="pembicara.html" class="active" aria-current="page">Pembicara</a>
+        <a href="rundown.html">Rundown</a>
+        <a href="https://ktp2jb.or.id/" target="_blank" rel="noopener noreferrer">KTP2JB</a>
+      </nav>
+      <a href="daftar.html" class="btn btn-navy header-cta">Daftar Sekarang</a>
+      <button type="button" class="mobile-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-panel" aria-label="Buka menu">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div class="mobile-panel" id="mobile-panel" hidden>
+      <nav aria-label="Navigasi seluler">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="pembicara.html" aria-current="page">Pembicara</a>
+        <a href="rundown.html">Rundown</a>
+        <a href="https://ktp2jb.or.id/" target="_blank" rel="noopener noreferrer">KTP2JB</a>
+        <a href="daftar.html" class="btn btn-navy">Daftar Sekarang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="utama">
+    <section class="page-hero page-hero-tight" aria-labelledby="pembicara-title">
+      <div class="shell agenda-hero">
+        <div>
+          <p class="section-kicker"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-users"></use></svg> Pembicara</p>
+          <h1 id="pembicara-title" class="section-title">Pembicara MSF 2026</h1>
+          <p class="about-hero-lead" style="margin-top:8px">Pilih hari untuk melihat pembicara per sesi. Jadwal lengkap ada di halaman Rundown.</p>
+        </div>
+        <div class="agenda-hero-meta" aria-label="Ringkasan pembicara" id="spk-hero-meta"></div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="shell">
+        <div class="agenda-toolbar" role="tablist" aria-label="Pilih hari pembicara">
+          <button type="button" class="agenda-tab is-active" role="tab" aria-selected="true" id="spk-tab-0" data-day="0">
+            <span class="agenda-tab-day">Hari 01</span>
+            <strong>2 Desember 2026</strong>
+            <em id="spk-tab-meta-0">—</em>
+          </button>
+          <button type="button" class="agenda-tab" role="tab" aria-selected="false" id="spk-tab-1" data-day="1">
+            <span class="agenda-tab-day">Hari 02</span>
+            <strong>3 Desember 2026</strong>
+            <em id="spk-tab-meta-1">—</em>
+          </button>
+          <a href="rundown.html" class="agenda-link-speakers">
+            <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-clock"></use></svg>
+            Lihat rundown
+          </a>
+        </div>
+
+        <div id="speaker-panels"></div>
+      </div>
+    </section>
+
+    <section class="section section-tight section-mist">
+      <div class="shell">
+        <div class="cta-inline">
+          <p><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-calendar"></use></svg><strong>Ingin bertemu pembicara di MSF 2026?</strong> · 2–3 Desember 2026 · Jakarta</p>
+          <a href="daftar.html" class="btn btn-teal">Daftar Sekarang</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer-tight">
+    <div class="shell">
+      <div class="footer-social" aria-label="Media sosial">
+        <div class="social-group">
+          <span class="social-label">KTP2JB</span>
+          <a class="social-btn" href="https://ktp2jb.or.id/" target="_blank" rel="noopener noreferrer" aria-label="Website KTP2JB"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-globe"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="Instagram KTP2JB"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-instagram"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="TikTok KTP2JB"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-tiktok"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="YouTube KTP2JB"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-youtube"></use></svg></a>
+        </div>
+        <div class="social-group">
+          <span class="social-label">Promedia</span>
+          <a class="social-btn" href="#" rel="noopener" aria-label="Instagram Promedia"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-instagram"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="TikTok Promedia"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-tiktok"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="YouTube Promedia"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-youtube"></use></svg></a>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p class="footer-copy">© 2026 Media Sustainability Forum | Organized by Promedia Group</p>
+        <p><strong>PT Promedia Teknologi Indonesia</strong><br>Bandung, Jawa Barat, Indonesia</p>
+        <p>
+          <a href="mailto:ads@promedia.id">ads@promedia.id</a> ·
+          <a href="mailto:partnership@promedia.id">partnership@promedia.id</a> ·
+          <a href="mailto:hello@promedia.id">hello@promedia.id</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <script>
+    const slot = (n = 1, first) => Array.from({ length: n }, (_, i) => (
+      i === 0 && first
+        ? first
+        : { name: 'Nama Pembicara', title: 'Jabatan', photo: null }
+    ));
+    const first = { name: 'Suprapto Sastro Atmojo', title: 'Ketua KTP2JB', photo: 'assets/suprapto.jpg' };
+
+    const days = [
+      {
+        label: '2 Desember 2026',
+        sessions: [
+          {
+            type: 'Keynote',
+            icon: 'i-megaphone',
+            title: 'Opening Keynote',
+            speakers: slot(4, first),
+          },
+          {
+            type: 'Panel',
+            icon: 'i-sparkles',
+            title: 'The New Gateway: Beyond Search',
+            speakers: slot(3),
+          },
+          {
+            type: 'Panel',
+            icon: 'i-scale',
+            title: 'Rules & Roadmap',
+            speakers: slot(5),
+          },
+        ],
+      },
+      {
+        label: '3 Desember 2026',
+        sessions: [
+          {
+            type: 'Workshop',
+            icon: 'i-cpu',
+            title: 'Pelatihan AI',
+            speakers: slot(4),
+          },
+          {
+            type: 'Forum',
+            icon: 'i-users',
+            title: 'Platform Media Forum',
+            speakers: slot(4),
+          },
+        ],
+      },
+    ];
+
+    const countPeople = (day) => day.sessions.reduce((n, s) => n + s.speakers.length, 0);
+    const totalPeople = days.reduce((n, d) => n + countPeople(d), 0);
+    const totalSessions = days.reduce((n, d) => n + d.sessions.length, 0);
+
+    document.getElementById('spk-hero-meta').innerHTML = `
+      <div><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-calendar"></use></svg><span>2 hari</span></div>
+      <div><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-users"></use></svg><span>${totalPeople} pembicara</span></div>
+      <div><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-sparkles"></use></svg><span>${totalSessions} sesi</span></div>
+    `;
+
+    days.forEach((day, i) => {
+      const el = document.getElementById(`spk-tab-meta-${i}`);
+      if (el) el.textContent = `${day.sessions.length} sesi · ${countPeople(day)} pembicara`;
+    });
+
+    const personCard = (s) => `
+      <article class="spk-person">
+        ${s.photo
+          ? `<div class="spk-person-media"><img src="${s.photo}" width="200" height="240" alt="${s.name}" loading="lazy"></div>`
+          : `<div class="spk-person-media ph-img" role="img" aria-label="Foto ${s.name}"><strong>200 × 240</strong></div>`}
+        <div class="spk-person-body">
+          <h3>${s.name}</h3>
+          <p>${s.title}</p>
+        </div>
+      </article>
+    `;
+
+    const panels = document.getElementById('speaker-panels');
+    panels.innerHTML = days.map((day, di) => `
+      <div class="agenda-panel ${di === 0 ? 'is-active' : ''}" role="tabpanel" id="spk-panel-${di}" aria-labelledby="spk-tab-${di}" ${di === 0 ? '' : 'hidden'}>
+        <div class="spk-sessions">
+          ${day.sessions.map((session) => `
+            <section class="spk-block">
+              <header class="spk-block-head">
+                <div class="spk-block-top">
+                  <span class="agenda-badge">${session.type}</span>
+                  <span class="agenda-count"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-users"></use></svg> ${session.speakers.length} pembicara</span>
+                </div>
+                <h2 class="spk-block-title">
+                  <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#${session.icon}"></use></svg>
+                  ${session.title}
+                </h2>
+              </header>
+              <div class="spk-people">
+                ${session.speakers.map(personCard).join('')}
+              </div>
+            </section>
+          `).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    const tabs = [...document.querySelectorAll('.agenda-tab')];
+    const showDay = (index) => {
+      tabs.forEach((tab, i) => {
+        const on = i === index;
+        tab.classList.toggle('is-active', on);
+        tab.setAttribute('aria-selected', String(on));
+      });
+      [...panels.children].forEach((panel, i) => {
+        const on = i === index;
+        panel.classList.toggle('is-active', on);
+        panel.hidden = !on;
+      });
+    };
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => showDay(Number(tab.dataset.day)));
+      tab.addEventListener('keydown', (e) => {
+        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+        e.preventDefault();
+        const i = Number(tab.dataset.day);
+        const next = e.key === 'ArrowRight' ? (i + 1) % tabs.length : (i - 1 + tabs.length) % tabs.length;
+        tabs[next].focus();
+        showDay(next);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#29234f">
+  <meta name="description" content="Form pendaftaran Media Sustainability Forum 2026 — 2–3 Desember 2026, Jakarta.">
+  <title>Daftar Sekarang — MSF 2026</title>
+  <link rel="preload" href="assets/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/tailwind.css">
+</head>
+<body class="bg-paper font-sans text-ink antialiased is-daftar">
+  <a href="#utama" class="skip-link">Lewati ke konten</a>
+
+  <header class="site-header">
+    <div class="shell">
+      <a href="index.html" class="brand-logo" aria-label="MSF 2026 — Beranda">
+        <img src="assets/logo.webp" width="492" height="92" alt="MSF 2026 — Media Sustainability Forum">
+      </a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="pembicara.html">Pembicara</a>
+        <a href="rundown.html">Rundown</a>
+        <a href="https://ktp2jb.or.id/" target="_blank" rel="noopener noreferrer">KTP2JB</a>
+      </nav>
+      <a href="daftar.html" class="btn btn-navy header-cta" aria-current="page">Daftar Sekarang</a>
+      <button type="button" class="mobile-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-panel" aria-label="Buka menu">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div class="mobile-panel" id="mobile-panel" hidden>
+      <nav aria-label="Navigasi seluler">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="pembicara.html">Pembicara</a>
+        <a href="rundown.html">Rundown</a>
+        <a href="https://ktp2jb.or.id/" target="_blank" rel="noopener noreferrer">KTP2JB</a>
+        <a href="daftar.html" class="btn btn-navy" aria-current="page">Daftar Sekarang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="utama">
+    <section class="page-hero page-hero-tight" aria-labelledby="daftar-title">
+      <div class="shell about-hero-row">
+        <div>
+          <p class="section-kicker"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-scroll"></use></svg> Pendaftaran</p>
+          <h1 id="daftar-title" class="section-title">Form Pendaftaran MSF 2026</h1>
+        </div>
+        <p class="about-hero-lead">Isi data di bawah. Undangan resmi dikirim ke email setelah pendaftaran berhasil.</p>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="shell daftar-layout">
+        <aside class="daftar-aside">
+          <div class="daftar-info">
+            <p class="section-kicker"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-sparkles"></use></svg> Info singkat</p>
+            <ul class="daftar-points">
+              <li><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-calendar"></use></svg> 2–3 Desember 2026</li>
+              <li><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-map-pin"></use></svg> Jakarta, Indonesia</li>
+              <li><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-users"></use></svg> Bisa pilih satu atau kedua hari</li>
+              <li><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-mail"></use></svg> Undangan dikirim via email</li>
+            </ul>
+          </div>
+          <div class="ph-img daftar-visual" role="img" aria-label="Placeholder visual pendaftaran"><strong>420 × 280</strong></div>
+        </aside>
+
+        <form class="register-form register-form-dense" id="register-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="nama"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-users"></use></svg> Nama lengkap</label>
+              <input id="nama" name="nama" type="text" autocomplete="name" required placeholder="Nama sesuai identitas">
+            </div>
+            <div class="field">
+              <label for="email"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-mail"></use></svg> Alamat email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="nama@email.com">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="whatsapp"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-megaphone"></use></svg> No. WhatsApp</label>
+              <input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" required placeholder="08xxxxxxxxxx" inputmode="tel">
+            </div>
+            <div class="field">
+              <label for="jabatan"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-building"></use></svg> Jabatan / posisi</label>
+              <input id="jabatan" name="jabatan" type="text" required placeholder="Jabatan Anda">
+            </div>
+          </div>
+          <div class="field">
+            <label for="instansi"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-building"></use></svg> Asal perusahaan / media / instansi</label>
+            <input id="instansi" name="instansi" type="text" required placeholder="Nama organisasi">
+          </div>
+
+          <fieldset class="field field-choice">
+            <legend><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-calendar"></use></svg> Hari kehadiran</legend>
+            <p class="field-hint">Peserta dapat memilih satu atau kedua hari.</p>
+            <div class="choice-row">
+              <label class="choice">
+                <input type="checkbox" name="hari" value="2 Desember 2026">
+                <span>2 Desember 2026</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="hari" value="3 Desember 2026">
+                <span>3 Desember 2026</span>
+              </label>
+            </div>
+            <p class="field-error" id="hari-error" hidden>Pilih minimal satu hari kehadiran.</p>
+          </fieldset>
+
+          <label class="choice choice-consent">
+            <input type="checkbox" name="consent" id="consent" required>
+            <span>Saya menyetujui bahwa data ini digunakan untuk keperluan verifikasi peserta Media Sustainability Forum.</span>
+          </label>
+
+          <p class="form-note">
+            Undangan resmi akan dikirim ke email Anda setelah pendaftaran berhasil. Mohon cek inbox secara berkala.
+          </p>
+
+          <button type="submit" class="btn btn-teal form-submit">Daftar Sekarang</button>
+        </form>
+
+        <aside class="confirm-preview" id="confirm-preview" hidden aria-live="polite">
+          <div class="ph-img confirm-banner" role="img" aria-label="Placeholder banner email"><strong>720 × 180</strong></div>
+          <div class="confirm-body">
+            <p class="confirm-hello">Kepada Yth. Bapak/Ibu <strong id="out-nama">—</strong></p>
+            <p>
+              Terima kasih telah mendaftar pada Media Sustainability Forum (MSF) 2026.
+              Pendaftaran Anda telah kami terima dengan data sebagai berikut:
+            </p>
+            <dl class="confirm-meta">
+              <div><dt>Nama Lengkap</dt><dd id="out-nama-2">—</dd></div>
+              <div><dt>Instansi / Media</dt><dd id="out-instansi">—</dd></div>
+              <div><dt>Tanggal Kehadiran</dt><dd id="out-hari">—</dd></div>
+            </dl>
+            <p class="confirm-italic">
+              Mohon tunjukkan email konfirmasi ini (cetak atau di ponsel) pada meja registrasi di hari acara.
+            </p>
+            <p>
+              Jika ada kendala atau penyesuaian data, hubungi panitia melalui
+              <a href="mailto:hello@promedia.id">hello@promedia.id</a>.
+            </p>
+            <p>
+              Sampai jumpa di Media Sustainability Forum 2026!<br>
+              Salam hangat,<br>
+              <strong>Panitia Media Sustainability Forum (MSF) 2026</strong>
+            </p>
+          </div>
+          <div class="ph-img confirm-footer" role="img" aria-label="Placeholder footer email"><strong>720 × 160</strong></div>
+          <button type="button" class="btn btn-navy" id="reset-form" style="margin:16px">Daftar peserta lain</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer-tight">
+    <div class="shell">
+      <div class="footer-social" aria-label="Media sosial">
+        <div class="social-group">
+          <span class="social-label">KTP2JB</span>
+          <a class="social-btn" href="https://ktp2jb.or.id/" target="_blank" rel="noopener noreferrer" aria-label="Website KTP2JB"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-globe"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="Instagram KTP2JB"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-instagram"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="TikTok KTP2JB"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-tiktok"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="YouTube KTP2JB"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-youtube"></use></svg></a>
+        </div>
+        <div class="social-group">
+          <span class="social-label">Promedia</span>
+          <a class="social-btn" href="#" rel="noopener" aria-label="Instagram Promedia"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-instagram"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="TikTok Promedia"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-tiktok"></use></svg></a>
+          <a class="social-btn" href="#" rel="noopener" aria-label="YouTube Promedia"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-youtube"></use></svg></a>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p class="footer-copy">© 2026 Media Sustainability Forum | Organized by Promedia Group</p>
+        <p><strong>PT Promedia Teknologi Indonesia</strong><br>Bandung, Jawa Barat, Indonesia</p>
+        <p>
+          <a href="mailto:ads@promedia.id">ads@promedia.id</a> ·
+          <a href="mailto:partnership@promedia.id">partnership@promedia.id</a> ·
+          <a href="mailto:hello@promedia.id">hello@promedia.id</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <script>
+    const form = document.getElementById('register-form');
+    const preview = document.getElementById('confirm-preview');
+    const aside = document.querySelector('.daftar-aside');
+    const hariError = document.getElementById('hari-error');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const hari = data.getAll('hari');
+      const validDays = hari.length > 0;
+      hariError.hidden = validDays;
+      if (!form.checkValidity() || !validDays) {
+        form.reportValidity();
+        return;
+      }
+
+      const nama = data.get('nama');
+      document.getElementById('out-nama').textContent = nama;
+      document.getElementById('out-nama-2').textContent = nama;
+      document.getElementById('out-instansi').textContent = data.get('instansi');
+      document.getElementById('out-hari').textContent = hari.join(' & ');
+
+      form.hidden = true;
+      if (aside) aside.hidden = true;
+      preview.hidden = false;
+      preview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    document.getElementById('reset-form').addEventListener('click', () => {
+      form.reset();
+      form.hidden = false;
+      if (aside) aside.hidden = false;
+      preview.hidden = true;
+      hariError.hidden = true;
+      form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  </script>
+</body>
+</html>
