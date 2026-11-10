@@ -3,35 +3,35 @@
     "id": 1,
     "nama": "Dr. Guntur Syahputra Saragih",
     "jabatan": "Anggota Kerja Sama Perusahaan Pers & Platform",
-    "foto": "images/pembicara-01-guntur-syahputra-saragih.webp",
-    "foto_png": "images/pembicara-01-guntur-syahputra-saragih.png"
+    "foto": "assets/speaker-2/images/pembicara-01-guntur-syahputra-saragih.png",
+    "foto_webp": "assets/speaker-2/images/pembicara-01-guntur-syahputra-saragih.webp"
   },
   {
     "id": 2,
     "nama": "Prof. Dr. H. M. Komaruddin Hidayat, M.A., Ph.D.",
     "jabatan": "Ketua Dewan Pers",
-    "foto": "images/pembicara-02-komaruddin-hidayat.webp",
-    "foto_png": "images/pembicara-02-komaruddin-hidayat.png"
+    "foto": "assets/speaker-2/images/pembicara-02-komaruddin-hidayat.png",
+    "foto_webp": "assets/speaker-2/images/pembicara-02-komaruddin-hidayat.webp"
   },
   {
     "id": 3,
     "nama": "Nezar Patria, S.Fil., M.A., M.B.A.",
     "jabatan": "Wakil Menteri Komdigi",
-    "foto": "images/pembicara-03-nezar-patria.webp",
-    "foto_png": "images/pembicara-03-nezar-patria.png"
+    "foto": "assets/speaker-2/images/pembicara-03-nezar-patria.png",
+    "foto_webp": "assets/speaker-2/images/pembicara-03-nezar-patria.webp"
   },
   {
     "id": 4,
     "nama": "Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum",
     "jabatan": "Wakil Menteri Hukum",
-    "foto": "images/pembicara-04-edward-omar-sharif-hiariej.webp",
-    "foto_png": "images/pembicara-04-edward-omar-sharif-hiariej.png"
+    "foto": "assets/speaker-2/images/pembicara-04-edward-omar-sharif-hiariej.png",
+    "foto_webp": "assets/speaker-2/images/pembicara-04-edward-omar-sharif-hiariej.webp"
   },
   {
     "id": 5,
     "nama": "Wahyu Dhyatmika",
     "jabatan": "Ketua Asosiasi Perusahaan Media (AMSI)",
-    "foto": "images/pembicara-05-wahyu-dhyatmika.webp",
-    "foto_png": "images/pembicara-05-wahyu-dhyatmika.png"
+    "foto": "assets/speaker-2/images/pembicara-05-wahyu-dhyatmika.png",
+    "foto_webp": "assets/speaker-2/images/pembicara-05-wahyu-dhyatmika.webp"
   }
 ]

@@ -126,10 +126,13 @@
       { name: 'Hj. Meutya Viada Hafid, B.Eng., M.IP.', title: 'Menteri Komdigi', photo: 'assets/speaker-assets/speaker-02-meutya.png' },
       { name: 'Prof. Dr. Ir. Rachmat Pambudy, M.S.', title: 'Kepala Bappenas', photo: 'assets/speaker-assets/speaker-03-rachmat.png' },
       { name: 'Dr. H. Syahganda Nainggolan, M.T.', title: 'Kepala Badan Komunikasi Pemerintah', photo: 'assets/speaker-assets/speaker-04-syahganda.png' },
+      { name: 'Dr. Guntur Syahputra Saragih', title: 'Anggota Kerja Sama Perusahaan Pers & Platform', photo: 'assets/speaker-2/images/pembicara-01-guntur-syahputra-saragih.png' },
+      { name: 'Prof. Dr. H. M. Komaruddin Hidayat, M.A., Ph.D.', title: 'Ketua Dewan Pers', photo: 'assets/speaker-2/images/pembicara-02-komaruddin-hidayat.png' },
+      { name: 'Nezar Patria, S.Fil., M.A., M.B.A.', title: 'Wakil Menteri Komdigi', photo: 'assets/speaker-2/images/pembicara-03-nezar-patria.png' },
+      { name: 'Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum', title: 'Wakil Menteri Hukum', photo: 'assets/speaker-2/images/pembicara-04-edward-omar-sharif-hiariej.png' },
+      { name: 'Wahyu Dhyatmika', title: 'Ketua Asosiasi Perusahaan Media (AMSI)', photo: 'assets/speaker-2/images/pembicara-05-wahyu-dhyatmika.png' },
     ];
-    const blank = { name: 'Nama Pembicara', title: 'Jabatan', photo: null };
     const pick = (...ids) => ids.map((i) => roster[i]);
-    const pad = (list, n) => [...list, ...Array.from({ length: Math.max(0, n - list.length) }, () => blank)];
 
     const days = [
       {
@@ -139,19 +142,19 @@
             type: 'Keynote',
             icon: 'i-megaphone',
             title: 'Opening Keynote',
-            speakers: pick(0, 1, 2, 3),
+            speakers: pick(0, 1, 2, 3, 4),
           },
           {
             type: 'Panel',
             icon: 'i-sparkles',
             title: 'The New Gateway: Beyond Search',
-            speakers: pad(pick(1, 2, 3), 3),
+            speakers: pick(1, 2, 3),
           },
           {
             type: 'Panel',
             icon: 'i-scale',
             title: 'Rules & Roadmap',
-            speakers: pad(pick(0, 2, 3), 5),
+            speakers: pick(0, 2, 3, 5, 6),
           },
         ],
       },
@@ -162,13 +165,13 @@
             type: 'Workshop',
             icon: 'i-cpu',
             title: 'Pelatihan AI',
-            speakers: pad(pick(3, 1), 4),
+            speakers: pick(3, 1, 7, 4),
           },
           {
             type: 'Forum',
             icon: 'i-users',
             title: 'Platform Media Forum',
-            speakers: pad(pick(0, 2), 4),
+            speakers: pick(0, 2, 8, 5),
           },
         ],
       },
