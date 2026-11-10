@@ -1,0 +1,28 @@
+DATA PEMBICARA — hasil ekstraksi dari gambar
+
+1. Opening
+Nama: Dr. Suprapto Sastro Atmojo, S.Pd., M.Si
+Jabatan: Ketua KTP2JB
+Fokus: Mandat Komite dan outcome yang ingin dicapai.
+Foto: speaker-01-suprapto.webp
+
+2. Ministry
+Nama: Hj. Meutya Viada Hafid, B.Eng., M.IP.
+Jabatan: Menteri Komdigi
+Fokus: Jurnalisme berkualitas dan keberlanjutan ekosistem pers.
+Foto: speaker-02-meutya.webp
+
+3. Government Keynote
+Nama: Prof. Dr. Ir. Rachmat Pambudy, M.S.
+Jabatan: Kepala Bappenas
+Fokus: Arah strategis pembangunan nasional, Kedaulatan Digital, dan Media Sustainability.
+Foto: speaker-03-rachmat.webp
+
+4. Government Keynote
+Nama: Dr. H. Syahganda Nainggolan, M.T.
+Jabatan: Kepala Badan Komunikasi Pemerintah
+Fokus: AI governance, transfer teknologi, dan masa depan media Indonesia.
+Foto: speaker-04-syahganda.webp
+
+Catatan: foto ini dipotong dari tangkapan layar asli beresolusi 982x425 px.
+Ukuran potret terpotong sekitar 205-210x224-225 px. Cropping tidak menambah ketajaman gambar.

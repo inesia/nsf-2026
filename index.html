@@ -277,15 +277,15 @@
   <script src="assets/site.js"></script>
   <script>
     const speakers = [
-      { name: 'Suprapto Sastro Atmojo', title: 'Ketua KTP2JB', photo: 'assets/images/Suprapto-Sastro-Atomojo-publisher-rights.jpg' },
-      ...Array.from({ length: 5 }, () => ({ name: 'Nama Pembicara', title: 'Jabatan', photo: null })),
+      { name: 'Dr. Suprapto Sastro Atmojo, S.Pd., M.Si', title: 'Ketua KTP2JB', photo: 'assets/speaker-assets/speaker-01-suprapto.png' },
+      { name: 'Hj. Meutya Viada Hafid, B.Eng., M.IP.', title: 'Menteri Komdigi', photo: 'assets/speaker-assets/speaker-02-meutya.png' },
+      { name: 'Prof. Dr. Ir. Rachmat Pambudy, M.S.', title: 'Kepala Bappenas', photo: 'assets/speaker-assets/speaker-03-rachmat.png' },
+      { name: 'Dr. H. Syahganda Nainggolan, M.T.', title: 'Kepala Badan Komunikasi Pemerintah', photo: 'assets/speaker-assets/speaker-04-syahganda.png' },
     ];
     document.getElementById('speaker-grid').innerHTML = speakers.map((s) => `
       <article class="speaker">
-        <div class="speaker-photo${s.photo ? '' : ' ph-img'}">
-          ${s.photo
-            ? `<img src="${s.photo}" width="160" height="160" alt="${s.name}" loading="lazy">`
-            : ''}
+        <div class="speaker-photo">
+          <img src="${s.photo}" width="160" height="160" alt="${s.name}" loading="lazy">
         </div>
         <h3>${s.name}</h3>
         <p>${s.title}</p>

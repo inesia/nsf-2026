@@ -121,12 +121,15 @@
 
   <script src="assets/site.js"></script>
   <script>
-    const slot = (n = 1, first) => Array.from({ length: n }, (_, i) => (
-      i === 0 && first
-        ? first
-        : { name: 'Nama Pembicara', title: 'Jabatan', photo: null }
-    ));
-    const first = { name: 'Suprapto Sastro Atmojo', title: 'Ketua KTP2JB', photo: 'assets/suprapto.jpg' };
+    const roster = [
+      { name: 'Dr. Suprapto Sastro Atmojo, S.Pd., M.Si', title: 'Ketua KTP2JB', photo: 'assets/speaker-assets/speaker-01-suprapto.png' },
+      { name: 'Hj. Meutya Viada Hafid, B.Eng., M.IP.', title: 'Menteri Komdigi', photo: 'assets/speaker-assets/speaker-02-meutya.png' },
+      { name: 'Prof. Dr. Ir. Rachmat Pambudy, M.S.', title: 'Kepala Bappenas', photo: 'assets/speaker-assets/speaker-03-rachmat.png' },
+      { name: 'Dr. H. Syahganda Nainggolan, M.T.', title: 'Kepala Badan Komunikasi Pemerintah', photo: 'assets/speaker-assets/speaker-04-syahganda.png' },
+    ];
+    const blank = { name: 'Nama Pembicara', title: 'Jabatan', photo: null };
+    const pick = (...ids) => ids.map((i) => roster[i]);
+    const pad = (list, n) => [...list, ...Array.from({ length: Math.max(0, n - list.length) }, () => blank)];
 
     const days = [
       {
@@ -136,19 +139,19 @@
             type: 'Keynote',
             icon: 'i-megaphone',
             title: 'Opening Keynote',
-            speakers: slot(4, first),
+            speakers: pick(0, 1, 2, 3),
           },
           {
             type: 'Panel',
             icon: 'i-sparkles',
             title: 'The New Gateway: Beyond Search',
-            speakers: slot(3),
+            speakers: pad(pick(1, 2, 3), 3),
           },
           {
             type: 'Panel',
             icon: 'i-scale',
             title: 'Rules & Roadmap',
-            speakers: slot(5),
+            speakers: pad(pick(0, 2, 3), 5),
           },
         ],
       },
@@ -159,13 +162,13 @@
             type: 'Workshop',
             icon: 'i-cpu',
             title: 'Pelatihan AI',
-            speakers: slot(4),
+            speakers: pad(pick(3, 1), 4),
           },
           {
             type: 'Forum',
             icon: 'i-users',
             title: 'Platform Media Forum',
-            speakers: slot(4),
+            speakers: pad(pick(0, 2), 4),
           },
         ],
       },

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "suprapto-sastro-atmojo",
+    "kategori": "Opening",
+    "nama": "Dr. Suprapto Sastro Atmojo, S.Pd., M.Si",
+    "jabatan": "Ketua KTP2JB",
+    "fokus": "Mandat Komite dan outcome yang ingin dicapai.",
+    "foto": "speaker-01-suprapto.webp"
+  },
+  {
+    "id": "meutya-viada-hafid",
+    "kategori": "Ministry",
+    "nama": "Hj. Meutya Viada Hafid, B.Eng., M.IP.",
+    "jabatan": "Menteri Komdigi",
+    "fokus": "Jurnalisme berkualitas dan keberlanjutan ekosistem pers.",
+    "foto": "speaker-02-meutya.webp"
+  },
+  {
+    "id": "rachmat-pambudy",
+    "kategori": "Government Keynote",
+    "nama": "Prof. Dr. Ir. Rachmat Pambudy, M.S.",
+    "jabatan": "Kepala Bappenas",
+    "fokus": "Arah strategis pembangunan nasional, Kedaulatan Digital, dan Media Sustainability.",
+    "foto": "speaker-03-rachmat.webp"
+  },
+  {
+    "id": "syahganda-nainggolan",
+    "kategori": "Government Keynote",
+    "nama": "Dr. H. Syahganda Nainggolan, M.T.",
+    "jabatan": "Kepala Badan Komunikasi Pemerintah",
+    "fokus": "AI governance, transfer teknologi, dan masa depan media Indonesia.",
+    "foto": "speaker-04-syahganda.webp"
+  }
+]
