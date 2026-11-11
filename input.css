@@ -1470,7 +1470,13 @@
     justify-items: center;
   }
   .speaker-grid-home .speaker-photo {
-    width: min(112px, 100%);
+    width: min(140px, 100%);
+    aspect-ratio: 4 / 5;
+    border-radius: 14px;
+    border-width: 2px;
+  }
+  .speaker-grid-home .speaker-photo img {
+    object-position: top center;
   }
   .gallery-grid-home {
     grid-template-columns: repeat(6, minmax(0, 1fr));
