@@ -179,6 +179,9 @@
   .brand-logo {
     width: min(220px, 42vw);
     flex-shrink: 0;
+    padding: 8px 4px 8px 2px;
+    margin-right: 8px;
+    box-sizing: content-box;
   }
   .brand-logo img {
     width: 100%;
@@ -883,7 +886,7 @@
   }
   .agenda-item {
     display: grid;
-    grid-template-columns: 18px 72px minmax(0, 1fr);
+    grid-template-columns: 18px minmax(132px, auto) minmax(0, 1fr);
     gap: 12px 14px;
     align-items: stretch;
   }
@@ -911,21 +914,16 @@
   }
   .agenda-time {
     padding-top: 14px;
-    text-align: right;
+    text-align: left;
+    white-space: nowrap;
   }
   .agenda-time strong {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 800;
     color: var(--navy);
     letter-spacing: -.2px;
-  }
-  .agenda-time span {
-    display: block;
-    margin-top: 2px;
-    font-size: 12px;
-    font-weight: 650;
-    color: var(--muted);
+    line-height: 1.35;
   }
   .agenda-card {
     margin-bottom: 14px;
@@ -1474,24 +1472,12 @@
     width: 100%;
     height: 96px;
     object-fit: cover;
-    object-position: center 30%;
     display: block;
     background: #d9dde5;
   }
   .home-shot-lg {
-    height: auto;
-    min-height: 0;
-    aspect-ratio: 16 / 10;
-    max-height: 360px;
-    object-fit: cover;
-    object-position: center 32%;
-  }
-  @media (min-width: 1100px) {
-    .home-shot-lg {
-      aspect-ratio: 3 / 2;
-      max-height: 420px;
-      object-position: center 28%;
-    }
+    min-height: 200px;
+    height: 220px;
   }
   .home-shot-grid {
     display: grid;
@@ -2223,7 +2209,7 @@
       top: 68px;
     }
     .agenda-link-speakers { grid-column: 1 / -1; min-height: 42px; }
-    .agenda-item { grid-template-columns: 16px 56px minmax(0, 1fr); gap: 10px; }
+    .agenda-item { grid-template-columns: 16px minmax(120px, auto) minmax(0, 1fr); gap: 10px; }
     .spk-people { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .gallery-grid-about { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .sponsor-grid-dense { grid-template-columns: repeat(3, minmax(0, 1fr)); }

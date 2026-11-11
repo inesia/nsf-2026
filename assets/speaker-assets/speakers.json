@@ -1,86 +1,114 @@
 [
   {
     "id": "suprapto-sastro-atmojo",
-    "sesi": "Day 1 — Opening Keynote",
+    "sesi": "Day 1 — OPENING KEYNOTE",
     "nama": "Dr. Suprapto Sastro Atmojo, S.Pd., M.Si",
     "jabatan": "Ketua KTP2JB",
     "foto": "foto-pembicara/suprapto.jpg"
   },
   {
-    "id": "rachmat-pambudy",
-    "sesi": "Day 1 — Opening Keynote",
-    "nama": "Prof. Dr. Ir. Rachmat Pambudy, M.S.",
-    "jabatan": "Menteri PPN / Kepala Bappenas",
-    "foto": "foto-pembicara/rachmat.jpg"
-  },
-  {
     "id": "meutya-viada-hafid",
-    "sesi": "Day 1 — Opening Keynote",
+    "sesi": "Day 1 — OPENING KEYNOTE",
     "nama": "Hj. Meutya Viada Hafid, B.Eng., M.IP.",
     "jabatan": "Menteri Komunikasi dan Digital",
     "foto": "foto-pembicara/meutya.jpg"
   },
   {
-    "id": "syahganda-nainggolan",
-    "sesi": "Day 1 — Opening Keynote",
-    "nama": "Dr. H. Syahganda Nainggolan, M.T.",
-    "jabatan": "Kepala Badan Komunikasi Pemerintah",
-    "foto": null
+    "id": "rachmat-pambudy",
+    "sesi": "Day 1 — OPENING KEYNOTE",
+    "nama": "Prof. Dr. Ir. Rachmat Pambudy, M.S.",
+    "jabatan": "Menteri PPN / Kepala Bappenas",
+    "foto": "foto-pembicara/rachmat.jpg"
   },
   {
     "id": "nezar-patria",
-    "sesi": "Day 1 — The New Gateway: Beyond Search",
+    "sesi": "Day 1 — THE NEW GATEWAY: BEYOND SEARCH",
     "nama": "Nezar Patria, S.Fil., M.A., M.B.A.",
     "jabatan": "Wakil Menteri Komdigi",
     "foto": null
   },
   {
     "id": "hary-tanoesoedibjo",
-    "sesi": "Day 1 — The New Gateway: Beyond Search",
+    "sesi": "Day 1 — THE NEW GATEWAY: BEYOND SEARCH",
     "nama": "Hary Tanoesoedibjo",
     "jabatan": "Executive Chairman MNC Group",
     "foto": "foto-pembicara/hary.jpg"
   },
   {
-    "id": "andy-budiman",
-    "sesi": "Day 1 — The New Gateway: Beyond Search",
-    "nama": "Andy Budiman",
+    "id": "andi-budiman",
+    "sesi": "Day 1 — THE NEW GATEWAY: BEYOND SEARCH",
+    "nama": "Andi Budiman",
     "jabatan": "CEO KG Media",
     "foto": "foto-pembicara/andy.jpg"
   },
   {
+    "id": "bappenas-tbd",
+    "sesi": "Day 1 — THE NEW GATEWAY: BEYOND SEARCH",
+    "nama": "Bappenas",
+    "jabatan": "TBD",
+    "foto": null
+  },
+  {
+    "id": "platform-ai-tbd",
+    "sesi": "Day 1 — THE NEW GATEWAY: BEYOND SEARCH",
+    "nama": "Platform AI",
+    "jabatan": "TBD",
+    "foto": null
+  },
+  {
     "id": "edward-hiariej",
-    "sesi": "Day 1 — Rules & Roadmap",
+    "sesi": "Day 1 — RULES & ROADMAP",
     "nama": "Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum",
     "jabatan": "Wakil Menteri Hukum",
     "foto": "foto-pembicara/edward.jpg"
   },
   {
     "id": "guntur-syahputra-saragih",
-    "sesi": "Day 1 — Rules & Roadmap",
+    "sesi": "Day 1 — RULES & ROADMAP",
     "nama": "Dr. Guntur Syahputra Saragih",
-    "jabatan": "Anggota Kerja Sama Perusahaan Pers & Platform",
+    "jabatan": "Anggota KTP2JB Bidang Kerjasama Perusahaan Pers & Platform",
     "foto": "foto-pembicara/guntur.jpg"
   },
   {
     "id": "dahlan-dahi",
-    "sesi": "Day 1 — Rules & Roadmap",
+    "sesi": "Day 1 — RULES & ROADMAP",
     "nama": "Dahlan Dahi",
     "jabatan": "Ketua Komisi Digital dan Sustainability Dewan Pers",
     "foto": "foto-pembicara/dahlan.jpg"
   },
   {
     "id": "agus-sudibyo",
-    "sesi": "Day 1 — Rules & Roadmap",
+    "sesi": "Day 1 — RULES & ROADMAP",
     "nama": "Dr. Agus Sudibyo, S.I.P., M.Hum",
     "jabatan": "Ketua Bidang Pendidikan PWI",
     "foto": "foto-pembicara/agus-sudibyo.jpg"
   },
   {
     "id": "wahyu-dhyatmika",
-    "sesi": "Day 1 — Rules & Roadmap",
+    "sesi": "Day 1 — RULES & ROADMAP",
     "nama": "Wahyu Dhyatmika",
     "jabatan": "Ketua Umum AMSI",
     "foto": "foto-pembicara/wahyu.jpg"
+  },
+  {
+    "id": "google",
+    "sesi": "Day 1 — PLATFORM MEDIA FORUM",
+    "nama": "Google",
+    "jabatan": "Platform",
+    "foto": null
+  },
+  {
+    "id": "meta",
+    "sesi": "Day 1 — PLATFORM MEDIA FORUM",
+    "nama": "Meta",
+    "jabatan": "Platform",
+    "foto": null
+  },
+  {
+    "id": "tiktok",
+    "sesi": "Day 1 — PLATFORM MEDIA FORUM",
+    "nama": "TikTok",
+    "jabatan": "Platform",
+    "foto": null
   }
 ]
