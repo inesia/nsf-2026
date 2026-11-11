@@ -1462,14 +1462,15 @@
     white-space: nowrap;
   }
   .text-link-teal:hover { color: var(--teal-dark); }
-  .speaker-grid-home {
+  .speaker-grid.speaker-grid-home {
     margin-top: 0;
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 14px 12px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px 20px;
+    justify-items: center;
   }
   .speaker-grid-home .speaker-photo {
-    width: min(92px, 100%);
+    width: min(112px, 100%);
   }
   .gallery-grid-home {
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1972,10 +1973,8 @@
   /* —— Responsive —— */
   @media (max-width: 1100px) {
     .speaker-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-    .speaker-grid-home {
-      grid-template-columns: repeat(6, minmax(110px, 1fr));
-      overflow-x: auto;
-      padding-bottom: 4px;
+    .speaker-grid.speaker-grid-home {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     .sponsor-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .gallery-grid-5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -1993,6 +1992,9 @@
     .gallery-grid,
     .gallery-grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .speaker-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .speaker-grid.speaker-grid-home {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
     .cta-band { padding: 28px; }
     .confirm-meta div { grid-template-columns: 1fr; gap: 2px; }
     .home-about,
@@ -2051,6 +2053,10 @@
       font-size: clamp(24px, 7vw, 32px);
     }
     .speaker-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 12px; }
+    .speaker-grid.speaker-grid-home {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px 12px;
+    }
     .session-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
     .sponsor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .sponsor-grid-dense { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -2076,9 +2082,6 @@
       flex-direction: column;
       align-items: flex-start;
       padding: 14px 16px;
-    }
-    .speaker-grid-home {
-      grid-template-columns: repeat(6, minmax(100px, 1fr));
     }
   }
   @media (prefers-reduced-motion: reduce) {

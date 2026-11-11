@@ -121,16 +121,20 @@
 
   <script src="assets/site.js"></script>
   <script>
+    const photo = (file) => `assets/speaker-assets/foto-pembicara/${file || 'placeholder.jpg'}`;
     const roster = [
-      { name: 'Dr. Suprapto Sastro Atmojo, S.Pd., M.Si', title: 'Ketua KTP2JB', photo: 'assets/speaker-assets/speaker-01-suprapto.png' },
-      { name: 'Hj. Meutya Viada Hafid, B.Eng., M.IP.', title: 'Menteri Komdigi', photo: 'assets/speaker-assets/speaker-02-meutya.png' },
-      { name: 'Prof. Dr. Ir. Rachmat Pambudy, M.S.', title: 'Kepala Bappenas', photo: 'assets/speaker-assets/speaker-03-rachmat.png' },
-      { name: 'Dr. H. Syahganda Nainggolan, M.T.', title: 'Kepala Badan Komunikasi Pemerintah', photo: 'assets/speaker-assets/speaker-04-syahganda.png' },
-      { name: 'Dr. Guntur Syahputra Saragih', title: 'Anggota Kerja Sama Perusahaan Pers & Platform', photo: 'assets/speaker-2/images/pembicara-01-guntur-syahputra-saragih.png' },
-      { name: 'Prof. Dr. H. M. Komaruddin Hidayat, M.A., Ph.D.', title: 'Ketua Dewan Pers', photo: 'assets/speaker-2/images/pembicara-02-komaruddin-hidayat.png' },
-      { name: 'Nezar Patria, S.Fil., M.A., M.B.A.', title: 'Wakil Menteri Komdigi', photo: 'assets/speaker-2/images/pembicara-03-nezar-patria.png' },
-      { name: 'Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum', title: 'Wakil Menteri Hukum', photo: 'assets/speaker-2/images/pembicara-04-edward-omar-sharif-hiariej.png' },
-      { name: 'Wahyu Dhyatmika', title: 'Ketua Asosiasi Perusahaan Media (AMSI)', photo: 'assets/speaker-2/images/pembicara-05-wahyu-dhyatmika.png' },
+      { name: 'Dr. Suprapto Sastro Atmojo, S.Pd., M.Si', title: 'Ketua KTP2JB', photo: photo('suprapto.jpg') },
+      { name: 'Prof. Dr. Ir. Rachmat Pambudy, M.S.', title: 'Menteri PPN / Kepala Bappenas', photo: photo('rachmat.jpg') },
+      { name: 'Hj. Meutya Viada Hafid, B.Eng., M.IP.', title: 'Menteri Komunikasi dan Digital', photo: photo('meutya.jpg') },
+      { name: 'Dr. H. Syahganda Nainggolan, M.T.', title: 'Kepala Badan Komunikasi Pemerintah', photo: photo() },
+      { name: 'Nezar Patria, S.Fil., M.A., M.B.A.', title: 'Wakil Menteri Komdigi', photo: photo() },
+      { name: 'Hary Tanoesoedibjo', title: 'Executive Chairman MNC Group', photo: photo('hary.jpg') },
+      { name: 'Andy Budiman', title: 'CEO KG Media', photo: photo('andy.jpg') },
+      { name: 'Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum', title: 'Wakil Menteri Hukum', photo: photo('edward.jpg') },
+      { name: 'Dr. Guntur Syahputra Saragih', title: 'Anggota Kerja Sama Perusahaan Pers & Platform', photo: photo('guntur.jpg') },
+      { name: 'Dahlan Dahi', title: 'Ketua Komisi Digital dan Sustainability Dewan Pers', photo: photo('dahlan.jpg') },
+      { name: 'Dr. Agus Sudibyo, S.I.P., M.Hum', title: 'Ketua Bidang Pendidikan PWI', photo: photo('agus-sudibyo.jpg') },
+      { name: 'Wahyu Dhyatmika', title: 'Ketua Umum AMSI', photo: photo('wahyu.jpg') },
     ];
     const pick = (...ids) => ids.map((i) => roster[i]);
 
@@ -142,19 +146,19 @@
             type: 'Keynote',
             icon: 'i-megaphone',
             title: 'Opening Keynote',
-            speakers: pick(0, 1, 2, 3, 4),
+            speakers: pick(0, 1, 2, 3),
           },
           {
             type: 'Panel',
             icon: 'i-sparkles',
             title: 'The New Gateway: Beyond Search',
-            speakers: pick(1, 2, 3),
+            speakers: pick(4, 5, 6),
           },
           {
             type: 'Panel',
             icon: 'i-scale',
             title: 'Rules & Roadmap',
-            speakers: pick(0, 2, 3, 5, 6),
+            speakers: pick(7, 8, 9, 10, 11),
           },
         ],
       },
@@ -162,16 +166,11 @@
         label: '3 Desember 2026',
         sessions: [
           {
-            type: 'Workshop',
+            type: 'Panel',
             icon: 'i-cpu',
-            title: 'Pelatihan AI',
-            speakers: pick(3, 1, 7, 4),
-          },
-          {
-            type: 'Forum',
-            icon: 'i-users',
-            title: 'Platform Media Forum',
-            speakers: pick(0, 2, 8, 5),
+            title: 'AI dalam Ruang Berita',
+            speakers: [],
+            note: 'Foto dan daftar pembicara menyusul',
           },
         ],
       },
@@ -194,15 +193,22 @@
 
     const personCard = (s) => `
       <article class="spk-person">
-        ${s.photo
-          ? `<div class="spk-person-media"><img src="${s.photo}" width="200" height="240" alt="${s.name}" loading="lazy"></div>`
-          : `<div class="spk-person-media ph-img" role="img" aria-label="Foto ${s.name}"><strong>200 × 240</strong></div>`}
+        <div class="spk-person-media"><img src="${s.photo}" width="200" height="240" alt="${s.name}" loading="lazy"></div>
         <div class="spk-person-body">
           <h3>${s.name}</h3>
           <p>${s.title}</p>
         </div>
       </article>
     `;
+
+    const sessionPeople = (session) => {
+      if (session.speakers.length) return session.speakers.map(personCard).join('');
+      return personCard({
+        name: 'Pembicara menyusul',
+        title: session.note || 'Data pembicara akan diumumkan',
+        photo: photo(),
+      });
+    };
 
     const panels = document.getElementById('speaker-panels');
     panels.innerHTML = days.map((day, di) => `
@@ -213,7 +219,7 @@
               <header class="spk-block-head">
                 <div class="spk-block-top">
                   <span class="agenda-badge">${session.type}</span>
-                  <span class="agenda-count"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-users"></use></svg> ${session.speakers.length} pembicara</span>
+                  <span class="agenda-count"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-users"></use></svg> ${session.speakers.length ? `${session.speakers.length} pembicara` : 'Menyusul'}</span>
                 </div>
                 <h2 class="spk-block-title">
                   <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#${session.icon}"></use></svg>
@@ -221,7 +227,7 @@
                 </h2>
               </header>
               <div class="spk-people">
-                ${session.speakers.map(personCard).join('')}
+                ${sessionPeople(session)}
               </div>
             </section>
           `).join('')}

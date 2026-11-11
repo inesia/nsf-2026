@@ -276,16 +276,16 @@
 
   <script src="assets/site.js"></script>
   <script>
+    const photo = (file) => `assets/speaker-assets/foto-pembicara/${file || 'placeholder.jpg'}`;
     const speakers = [
-      { name: 'Dr. Suprapto Sastro Atmojo, S.Pd., M.Si', title: 'Ketua KTP2JB', photo: 'assets/speaker-assets/speaker-01-suprapto.png' },
-      { name: 'Hj. Meutya Viada Hafid, B.Eng., M.IP.', title: 'Menteri Komdigi', photo: 'assets/speaker-assets/speaker-02-meutya.png' },
-      { name: 'Prof. Dr. Ir. Rachmat Pambudy, M.S.', title: 'Kepala Bappenas', photo: 'assets/speaker-assets/speaker-03-rachmat.png' },
-      { name: 'Dr. H. Syahganda Nainggolan, M.T.', title: 'Kepala Badan Komunikasi Pemerintah', photo: 'assets/speaker-assets/speaker-04-syahganda.png' },
-      { name: 'Dr. Guntur Syahputra Saragih', title: 'Anggota Kerja Sama Perusahaan Pers & Platform', photo: 'assets/speaker-2/images/pembicara-01-guntur-syahputra-saragih.png' },
-      { name: 'Prof. Dr. H. M. Komaruddin Hidayat, M.A., Ph.D.', title: 'Ketua Dewan Pers', photo: 'assets/speaker-2/images/pembicara-02-komaruddin-hidayat.png' },
-      { name: 'Nezar Patria, S.Fil., M.A., M.B.A.', title: 'Wakil Menteri Komdigi', photo: 'assets/speaker-2/images/pembicara-03-nezar-patria.png' },
-      { name: 'Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum', title: 'Wakil Menteri Hukum', photo: 'assets/speaker-2/images/pembicara-04-edward-omar-sharif-hiariej.png' },
-      { name: 'Wahyu Dhyatmika', title: 'Ketua Asosiasi Perusahaan Media (AMSI)', photo: 'assets/speaker-2/images/pembicara-05-wahyu-dhyatmika.png' },
+      { name: 'Dr. Suprapto Sastro Atmojo, S.Pd., M.Si', title: 'Ketua KTP2JB', photo: photo('suprapto.jpg') },
+      { name: 'Prof. Dr. Ir. Rachmat Pambudy, M.S.', title: 'Menteri PPN / Kepala Bappenas', photo: photo('rachmat.jpg') },
+      { name: 'Hj. Meutya Viada Hafid, B.Eng., M.IP.', title: 'Menteri Komunikasi dan Digital', photo: photo('meutya.jpg') },
+      { name: 'Dr. H. Syahganda Nainggolan, M.T.', title: 'Kepala Badan Komunikasi Pemerintah', photo: photo() },
+      { name: 'Nezar Patria, S.Fil., M.A., M.B.A.', title: 'Wakil Menteri Komdigi', photo: photo() },
+      { name: 'Hary Tanoesoedibjo', title: 'Executive Chairman MNC Group', photo: photo('hary.jpg') },
+      { name: 'Andy Budiman', title: 'CEO KG Media', photo: photo('andy.jpg') },
+      { name: 'Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum', title: 'Wakil Menteri Hukum', photo: photo('edward.jpg') },
     ];
     document.getElementById('speaker-grid').innerHTML = speakers.map((s) => `
       <article class="speaker">

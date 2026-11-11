@@ -1,5 +1,13 @@
-﻿id,kategori,nama,jabatan,fokus,foto
-suprapto-sastro-atmojo,Opening,"Dr. Suprapto Sastro Atmojo, S.Pd., M.Si",Ketua KTP2JB,Mandat Komite dan outcome yang ingin dicapai.,speaker-01-suprapto.webp
-meutya-viada-hafid,Ministry,"Hj. Meutya Viada Hafid, B.Eng., M.IP.",Menteri Komdigi,Jurnalisme berkualitas dan keberlanjutan ekosistem pers.,speaker-02-meutya.webp
-rachmat-pambudy,Government Keynote,"Prof. Dr. Ir. Rachmat Pambudy, M.S.",Kepala Bappenas,"Arah strategis pembangunan nasional, Kedaulatan Digital, dan Media Sustainability.",speaker-03-rachmat.webp
-syahganda-nainggolan,Government Keynote,"Dr. H. Syahganda Nainggolan, M.T.",Kepala Badan Komunikasi Pemerintah,"AI governance, transfer teknologi, dan masa depan media Indonesia.",speaker-04-syahganda.webp
+﻿id,sesi,nama,jabatan,foto
+suprapto-sastro-atmojo,Day 1 — Opening Keynote,"Dr. Suprapto Sastro Atmojo, S.Pd., M.Si",Ketua KTP2JB,foto-pembicara/suprapto.jpg
+rachmat-pambudy,Day 1 — Opening Keynote,"Prof. Dr. Ir. Rachmat Pambudy, M.S.",Menteri PPN / Kepala Bappenas,foto-pembicara/rachmat.jpg
+meutya-viada-hafid,Day 1 — Opening Keynote,"Hj. Meutya Viada Hafid, B.Eng., M.IP.",Menteri Komunikasi dan Digital,foto-pembicara/meutya.jpg
+syahganda-nainggolan,Day 1 — Opening Keynote,"Dr. H. Syahganda Nainggolan, M.T.",Kepala Badan Komunikasi Pemerintah,
+nezar-patria,Day 1 — The New Gateway: Beyond Search,"Nezar Patria, S.Fil., M.A., M.B.A.",Wakil Menteri Komdigi,
+hary-tanoesoedibjo,Day 1 — The New Gateway: Beyond Search,Hary Tanoesoedibjo,Executive Chairman MNC Group,foto-pembicara/hary.jpg
+andy-budiman,Day 1 — The New Gateway: Beyond Search,Andy Budiman,CEO KG Media,foto-pembicara/andy.jpg
+edward-hiariej,Day 1 — Rules & Roadmap,"Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum",Wakil Menteri Hukum,foto-pembicara/edward.jpg
+guntur-syahputra-saragih,Day 1 — Rules & Roadmap,Dr. Guntur Syahputra Saragih,Anggota Kerja Sama Perusahaan Pers & Platform,foto-pembicara/guntur.jpg
+dahlan-dahi,Day 1 — Rules & Roadmap,Dahlan Dahi,Ketua Komisi Digital dan Sustainability Dewan Pers,foto-pembicara/dahlan.jpg
+agus-sudibyo,Day 1 — Rules & Roadmap,"Dr. Agus Sudibyo, S.I.P., M.Hum",Ketua Bidang Pendidikan PWI,foto-pembicara/agus-sudibyo.jpg
+wahyu-dhyatmika,Day 1 — Rules & Roadmap,Wahyu Dhyatmika,Ketua Umum AMSI,foto-pembicara/wahyu.jpg

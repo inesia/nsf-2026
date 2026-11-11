@@ -1,34 +1,86 @@
 [
   {
     "id": "suprapto-sastro-atmojo",
-    "kategori": "Opening",
+    "sesi": "Day 1 — Opening Keynote",
     "nama": "Dr. Suprapto Sastro Atmojo, S.Pd., M.Si",
     "jabatan": "Ketua KTP2JB",
-    "fokus": "Mandat Komite dan outcome yang ingin dicapai.",
-    "foto": "speaker-01-suprapto.webp"
-  },
-  {
-    "id": "meutya-viada-hafid",
-    "kategori": "Ministry",
-    "nama": "Hj. Meutya Viada Hafid, B.Eng., M.IP.",
-    "jabatan": "Menteri Komdigi",
-    "fokus": "Jurnalisme berkualitas dan keberlanjutan ekosistem pers.",
-    "foto": "speaker-02-meutya.webp"
+    "foto": "foto-pembicara/suprapto.jpg"
   },
   {
     "id": "rachmat-pambudy",
-    "kategori": "Government Keynote",
+    "sesi": "Day 1 — Opening Keynote",
     "nama": "Prof. Dr. Ir. Rachmat Pambudy, M.S.",
-    "jabatan": "Kepala Bappenas",
-    "fokus": "Arah strategis pembangunan nasional, Kedaulatan Digital, dan Media Sustainability.",
-    "foto": "speaker-03-rachmat.webp"
+    "jabatan": "Menteri PPN / Kepala Bappenas",
+    "foto": "foto-pembicara/rachmat.jpg"
+  },
+  {
+    "id": "meutya-viada-hafid",
+    "sesi": "Day 1 — Opening Keynote",
+    "nama": "Hj. Meutya Viada Hafid, B.Eng., M.IP.",
+    "jabatan": "Menteri Komunikasi dan Digital",
+    "foto": "foto-pembicara/meutya.jpg"
   },
   {
     "id": "syahganda-nainggolan",
-    "kategori": "Government Keynote",
+    "sesi": "Day 1 — Opening Keynote",
     "nama": "Dr. H. Syahganda Nainggolan, M.T.",
     "jabatan": "Kepala Badan Komunikasi Pemerintah",
-    "fokus": "AI governance, transfer teknologi, dan masa depan media Indonesia.",
-    "foto": "speaker-04-syahganda.webp"
+    "foto": null
+  },
+  {
+    "id": "nezar-patria",
+    "sesi": "Day 1 — The New Gateway: Beyond Search",
+    "nama": "Nezar Patria, S.Fil., M.A., M.B.A.",
+    "jabatan": "Wakil Menteri Komdigi",
+    "foto": null
+  },
+  {
+    "id": "hary-tanoesoedibjo",
+    "sesi": "Day 1 — The New Gateway: Beyond Search",
+    "nama": "Hary Tanoesoedibjo",
+    "jabatan": "Executive Chairman MNC Group",
+    "foto": "foto-pembicara/hary.jpg"
+  },
+  {
+    "id": "andy-budiman",
+    "sesi": "Day 1 — The New Gateway: Beyond Search",
+    "nama": "Andy Budiman",
+    "jabatan": "CEO KG Media",
+    "foto": "foto-pembicara/andy.jpg"
+  },
+  {
+    "id": "edward-hiariej",
+    "sesi": "Day 1 — Rules & Roadmap",
+    "nama": "Prof. Dr. Edward Omar Sharif Hiariej, S.H., M.Hum",
+    "jabatan": "Wakil Menteri Hukum",
+    "foto": "foto-pembicara/edward.jpg"
+  },
+  {
+    "id": "guntur-syahputra-saragih",
+    "sesi": "Day 1 — Rules & Roadmap",
+    "nama": "Dr. Guntur Syahputra Saragih",
+    "jabatan": "Anggota Kerja Sama Perusahaan Pers & Platform",
+    "foto": "foto-pembicara/guntur.jpg"
+  },
+  {
+    "id": "dahlan-dahi",
+    "sesi": "Day 1 — Rules & Roadmap",
+    "nama": "Dahlan Dahi",
+    "jabatan": "Ketua Komisi Digital dan Sustainability Dewan Pers",
+    "foto": "foto-pembicara/dahlan.jpg"
+  },
+  {
+    "id": "agus-sudibyo",
+    "sesi": "Day 1 — Rules & Roadmap",
+    "nama": "Dr. Agus Sudibyo, S.I.P., M.Hum",
+    "jabatan": "Ketua Bidang Pendidikan PWI",
+    "foto": "foto-pembicara/agus-sudibyo.jpg"
+  },
+  {
+    "id": "wahyu-dhyatmika",
+    "sesi": "Day 1 — Rules & Roadmap",
+    "nama": "Wahyu Dhyatmika",
+    "jabatan": "Ketua Umum AMSI",
+    "foto": "foto-pembicara/wahyu.jpg"
   }
 ]
