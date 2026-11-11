@@ -42,17 +42,28 @@
   </header>
 
 <main id="utama">
-    <section class="hero-poster" aria-label="Media Sustainability Forum 2026">
+    <section class="hero-slider" aria-roledescription="carousel" aria-label="Media Sustainability Forum 2026" id="hero-slider">
       <h1 class="sr-only">Ketika AI Mengubah Cara Berita Ditemukan, Siapa yang Menjaga Keberlanjutan Jurnalisme?</h1>
-      <img
-        class="hero-poster-img"
-        src="assets/hero-poster.png"
-        width="1920"
-        height="1080"
-        alt="MSF 2026 — Ketika AI Mengubah Cara Berita Ditemukan, Siapa yang Menjaga Keberlanjutan Jurnalisme? 2–3 Desember 2026, Gedung Dewan Pers, Jakarta."
-        decoding="async"
-        fetchpriority="high"
-      >
+      <div class="hero-slider-viewport" tabindex="0" data-hero-viewport>
+        <div class="hero-slider-track" data-hero-track>
+          <div class="hero-slide is-active" data-hero-slide>
+            <img src="assets/hero-poster.png" width="1920" height="1080" alt="MSF 2026 — Ketika AI Mengubah Cara Berita Ditemukan, Siapa yang Menjaga Keberlanjutan Jurnalisme?" decoding="async" fetchpriority="high">
+          </div>
+          <div class="hero-slide" data-hero-slide aria-hidden="true">
+            <img src="assets/hero-poster.png" width="1920" height="1080" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="hero-slide" data-hero-slide aria-hidden="true">
+            <img src="assets/hero-poster.png" width="1920" height="1080" alt="" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+      <button type="button" class="hero-nav hero-nav-prev" data-hero-prev aria-label="Slide sebelumnya">
+        <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-chevron-left"></use></svg>
+      </button>
+      <button type="button" class="hero-nav hero-nav-next" data-hero-next aria-label="Slide berikutnya">
+        <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-chevron-right"></use></svg>
+      </button>
+      <div class="hero-dots" data-hero-dots role="tablist" aria-label="Pilih slide"></div>
     </section>
 
     <!-- Focus chips -->
@@ -87,12 +98,12 @@
           </div>
         </div>
         <div class="home-about-visual">
-          <img class="home-shot home-shot-lg" src="assets/images/imagesasdad.jpg" width="840" height="420" alt="Seminar Nasional Media Sustainability Forum 2025" loading="eager">
+          <img class="home-shot home-shot-lg" src="assets/tentang/atas/msf2025-atas-01.jpg" width="840" height="420" alt="Dokumentasi Media Sustainability Forum 2025" loading="eager">
           <div class="home-shot-grid">
-            <img class="home-shot" src="assets/images/imageasdas.jpg" width="200" height="150" alt="Diskusi panel Platform Media" loading="lazy">
-            <img class="home-shot" src="assets/images/imagesktp-2jb1123.jpg" width="200" height="150" alt="Pembicara KTP2JB dalam forum" loading="lazy">
-            <img class="home-shot" src="assets/images/imagesktp-2jb.jpg" width="200" height="150" alt="Tim KTP2JB" loading="lazy">
-            <img class="home-shot" src="assets/images/images.jpg" width="200" height="150" alt="Peserta dan pejabat di acara MSF" loading="lazy">
+            <img class="home-shot" src="assets/tentang/atas/msf2025-atas-02.jpg" width="200" height="150" alt="Dokumentasi MSF 2025" loading="lazy">
+            <img class="home-shot" src="assets/tentang/atas/msf2025-atas-03.jpg" width="200" height="150" alt="Dokumentasi MSF 2025" loading="lazy">
+            <img class="home-shot" src="assets/tentang/atas/msf2025-atas-04.jpg" width="200" height="150" alt="Dokumentasi MSF 2025" loading="lazy">
+            <img class="home-shot" src="assets/tentang/atas/msf2025-atas-05.jpg" width="200" height="150" alt="Dokumentasi MSF 2025" loading="lazy">
           </div>
         </div>
       </div>
@@ -122,7 +133,7 @@
         <div class="home-agenda">
           <div class="home-agenda-head">
             <h3><svg class="ico" aria-hidden="true" style="display:inline-block;width:14px;height:14px;vertical-align:-2px;margin-right:6px"><use href="assets/icons.svg#i-clock"></use></svg>Cuplikan rundown</h3>
-            <a href="rundown.html">Lihat lengkap →</a>
+            <a href="rundown.html">Lihat Selengkapnya</a>
           </div>
           <ul class="home-agenda-list">
             <li>
@@ -175,33 +186,50 @@
         <div class="home-section-row">
           <div>
             <p class="section-kicker"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-images"></use></svg> Galeri</p>
-            <h2 id="galeri-title" class="section-title">MSF sebelumnya</h2>
+            <h2 id="galeri-title" class="section-title">MSF 2025</h2>
           </div>
-          <a href="tentang.html" class="text-link-teal">Lihat di Tentang →</a>
+          <a href="tentang.html" class="text-link-teal">Lihat Selengkapnya</a>
         </div>
-        <div class="gallery-grid gallery-grid-home">
-          <figure class="gallery-item"><img src="assets/images/imagesasdad.jpg" width="280" height="280" alt="Seminar Nasional MSF 2025" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="assets/images/images.jpg" width="280" height="280" alt="Foto bersama peserta MSF" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="assets/images/imageasdas.jpg" width="280" height="280" alt="Diskusi Platform Media" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="assets/images/imagesktp-2jb.jpg" width="280" height="280" alt="Komite KTP2JB" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="assets/images/imagesktp-2jb1123.jpg" width="280" height="280" alt="Sesi diskusi KTP2JB" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="assets/images/komite-ktp2jb-1741604476546_169.jpeg" width="280" height="280" alt="Pidato di podium KTP2JB" loading="lazy"></figure>
+        <div class="gallery-grid gallery-grid-home" data-lightbox-gallery>
+          <figure class="gallery-item"><button type="button" class="gallery-open" data-lightbox-src="assets/tentang/atas/msf2025-atas-06.jpg" aria-label="Perbesar foto dokumentasi MSF 2025"><img src="assets/tentang/atas/msf2025-atas-06.jpg" width="280" height="280" alt="Dokumentasi MSF 2025" loading="lazy"></button></figure>
+          <figure class="gallery-item"><button type="button" class="gallery-open" data-lightbox-src="assets/tentang/bawah/msf2025-bawah-01.jpg" aria-label="Perbesar foto dokumentasi MSF 2025"><img src="assets/tentang/bawah/msf2025-bawah-01.jpg" width="280" height="280" alt="Dokumentasi MSF 2025" loading="lazy"></button></figure>
+          <figure class="gallery-item"><button type="button" class="gallery-open" data-lightbox-src="assets/tentang/bawah/msf2025-bawah-02.jpg" aria-label="Perbesar foto dokumentasi MSF 2025"><img src="assets/tentang/bawah/msf2025-bawah-02.jpg" width="280" height="280" alt="Dokumentasi MSF 2025" loading="lazy"></button></figure>
+          <figure class="gallery-item"><button type="button" class="gallery-open" data-lightbox-src="assets/tentang/bawah/msf2025-bawah-03.jpg" aria-label="Perbesar foto dokumentasi MSF 2025"><img src="assets/tentang/bawah/msf2025-bawah-03.jpg" width="280" height="280" alt="Dokumentasi MSF 2025" loading="lazy"></button></figure>
+          <figure class="gallery-item"><button type="button" class="gallery-open" data-lightbox-src="assets/tentang/bawah/msf2025-bawah-04.jpg" aria-label="Perbesar foto dokumentasi MSF 2025"><img src="assets/tentang/bawah/msf2025-bawah-04.jpg" width="280" height="280" alt="Dokumentasi MSF 2025" loading="lazy"></button></figure>
+          <figure class="gallery-item"><button type="button" class="gallery-open" data-lightbox-src="assets/tentang/bawah/msf2025-bawah-05.jpg" aria-label="Perbesar foto dokumentasi MSF 2025"><img src="assets/tentang/bawah/msf2025-bawah-05.jpg" width="280" height="280" alt="Dokumentasi MSF 2025" loading="lazy"></button></figure>
         </div>
       </div>
     </section>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button type="button" class="lightbox-backdrop" data-lightbox-close aria-label="Tutup"></button>
+      <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Pratinjau galeri">
+        <button type="button" class="lightbox-close" data-lightbox-close aria-label="Tutup">
+          <span aria-hidden="true">×</span>
+        </button>
+        <button type="button" class="lightbox-nav lightbox-prev" data-lightbox-prev aria-label="Foto sebelumnya">
+          <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-chevron-left"></use></svg>
+        </button>
+        <img class="lightbox-img" data-lightbox-img alt="">
+        <button type="button" class="lightbox-nav lightbox-next" data-lightbox-next aria-label="Foto berikutnya">
+          <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-chevron-right"></use></svg>
+        </button>
+        <p class="lightbox-count" data-lightbox-count></p>
+      </div>
+    </div>
 
     <!-- Sponsor + CTA compact -->
     <section class="section section-tight" id="sponsor" aria-labelledby="sponsor-title">
       <div class="shell">
         <div class="home-section-row">
           <div>
-            <p class="section-kicker"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-building"></use></svg> Mitra</p>
+            <p class="section-kicker"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-building"></use></svg> Sponsor</p>
             <h2 id="sponsor-title" class="section-title">Didukung oleh</h2>
           </div>
         </div>
         <div class="mitra-dense">
-          <div class="mitra-main" aria-label="Logo mitra utama">
-            <p class="mitra-label">Mitra utama</p>
+          <div class="mitra-main" aria-label="Logo sponsor utama">
+            <p class="mitra-label">Sponsor utama</p>
             <div class="mitra-main-logos">
               <div class="mitra-logo-plate">
                 <img src="assets/Logo_Kementerian_PPN-Bappenas_(2023).png" width="280" height="96" alt="Bappenas — Kementerian PPN">
