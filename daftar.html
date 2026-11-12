@@ -77,7 +77,7 @@
             </div>
             <div class="field">
               <label for="email"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-mail"></use></svg> Alamat email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required placeholder="nama@email.com">
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="nama@email.com" autocorrect="off" autocapitalize="none" spellcheck="false" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
           </div>
           <div class="field-row">
@@ -128,6 +128,14 @@
             <img src="assets/hero-poster.png" width="720" height="180" alt="MSF 2026 — Media Sustainability Forum" loading="lazy">
           </figure>
           <div class="confirm-body">
+            <div class="confirm-success-alert" id="confirm-success-alert" style="display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:12px;background:#e6f7f6;border:1px solid #008e96;color:#181832;">
+              <svg class="ico" style="width:24px;height:24px;color:#008e96;flex-shrink:0;margin-top:2px;" aria-hidden="true"><use href="assets/icons.svg#i-mail"></use></svg>
+              <div>
+                <strong style="display:block;font-size:15px;color:#007c85;margin-bottom:2px;">Pendaftaran Berhasil Diterima</strong>
+                <p style="margin:0;font-size:14px;line-height:1.6;color:#181832;">Terima kasih sudah mendaftar pada Media Sustainability Forum (MSF) 2026. Undangan resmi akan segera dikirimkan ke email Anda: <strong id="out-email">—</strong>. Mohon periksa berkala kotak masuk (inbox) atau folder spam email Anda.</p>
+              </div>
+            </div>
+
             <p class="confirm-hello">Kepada Yth. Bapak/Ibu <strong id="out-nama">—</strong></p>
             <p>
               Terima kasih telah mendaftar pada Media Sustainability Forum (MSF) 2026.
@@ -135,11 +143,12 @@
             </p>
             <dl class="confirm-meta">
               <div><dt>Nama Lengkap</dt><dd id="out-nama-2">—</dd></div>
+              <div><dt>Alamat Email</dt><dd id="out-email-meta">—</dd></div>
               <div><dt>Instansi / Media</dt><dd id="out-instansi">—</dd></div>
               <div><dt>Tanggal Kehadiran</dt><dd id="out-hari">—</dd></div>
             </dl>
             <p class="confirm-italic">
-              Mohon tunjukkan email konfirmasi ini (cetak atau di ponsel) pada meja registrasi di hari acara.
+              Undangan resmi dan tiket konfirmasi akan dikirimkan ke email di atas. Mohon tunjukkan email konfirmasi ini (cetak atau di ponsel) pada meja registrasi di hari acara.
             </p>
             <p>
               Jika ada kendala atau penyesuaian data, hubungi panitia melalui
@@ -156,6 +165,47 @@
           </figure>
           <button type="button" class="btn btn-navy" id="reset-form" style="margin:16px">Daftar peserta lain</button>
         </aside>
+
+        <!-- Popup Modal Sukses -->
+        <dialog id="success-modal" class="success-modal" closedby="any" aria-labelledby="modal-title">
+          <div class="modal-card">
+            <div class="modal-header">
+              <div class="modal-icon-badge" aria-hidden="true">
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h2 id="modal-title" class="modal-title">Pendaftaran Berhasil!</h2>
+                <p class="modal-subtitle">Media Sustainability Forum (MSF) 2026</p>
+              </div>
+            </div>
+            <div class="modal-body">
+              <p class="modal-greet">
+                Terima kasih sudah mendaftar, Bapak/Ibu <strong id="modal-out-nama">—</strong>.
+              </p>
+              <div class="modal-info-box">
+                <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-mail"></use></svg>
+                <div>
+                  <strong>Undangan Resmi Akan Dikirim ke Email</strong>
+                  <p>
+                    Undangan resmi, jadwal kegiatan, serta bukti registrasi acara akan kami kirimkan ke:
+                    <strong id="modal-out-email" class="modal-email-highlight">—</strong>
+                  </p>
+                </div>
+              </div>
+              <p class="modal-hint">
+                Mohon periksa kotak masuk (inbox) atau folder spam email Anda secara berkala.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <form method="dialog">
+                <button type="submit" class="btn btn-teal" autofocus>Lihat Bukti Pendaftaran</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </div>
     </section>
   </main>
@@ -193,32 +243,151 @@
 
   <script src="assets/site.js"></script>
   <script>
+    const GFORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfyQLS0t4qeiE63g0d1ebHdu9KbYJXyg6bcGpEmdshJZVEeEQ/formResponse';
+    const ENTRY = {
+      nama: 'entry.1984490686',
+      whatsapp: 'entry.1875836916',
+      jabatan: 'entry.1570211814',
+      instansi: 'entry.547035517',
+      hari: 'entry.1773640906',
+      consent: 'entry.464267087'
+    };
+    const CONSENT_VALUE = 'Setuju'; // harus sama persis dengan opsi di Google Form
+
     const form = document.getElementById('register-form');
     const preview = document.getElementById('confirm-preview');
     const aside = document.querySelector('.daftar-aside');
     const hariError = document.getElementById('hari-error');
+    const submitBtn = form.querySelector('.form-submit');
+    const emailInput = document.getElementById('email');
+    const successModal = document.getElementById('success-modal');
 
-    form.addEventListener('submit', (e) => {
+    // Validasi format email yang benar
+    const validateEmailFormat = () => {
+      const val = emailInput.value.trim();
+      if (!val) {
+        emailInput.setCustomValidity('Alamat email wajib diisi.');
+        return false;
+      }
+      // Memeriksa struktur email: user@domain.tld (TLD minimal 2 karakter)
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (!emailRegex.test(val)) {
+        emailInput.setCustomValidity('Format email tidak valid (contoh: nama@domain.com).');
+        return false;
+      }
+      emailInput.setCustomValidity('');
+      return true;
+    };
+
+    emailInput.addEventListener('blur', () => {
+      if (emailInput.value.trim().length > 0) {
+        validateEmailFormat();
+        emailInput.reportValidity();
+      }
+    });
+
+    emailInput.addEventListener('input', () => {
+      emailInput.setCustomValidity('');
+    });
+
+    // Fallback light-dismiss untuk browser tanpa dukungan native closedby
+    if (successModal && !('closedBy' in HTMLDialogElement.prototype)) {
+      successModal.addEventListener('click', (event) => {
+        if (event.target !== successModal) return;
+        const rect = successModal.getBoundingClientRect();
+        const isInside = (
+          rect.top <= event.clientY &&
+          event.clientY <= rect.top + rect.height &&
+          rect.left <= event.clientX &&
+          event.clientX <= rect.left + rect.width
+        );
+        if (!isInside) {
+          successModal.close();
+        }
+      });
+    }
+
+    if (successModal) {
+      successModal.addEventListener('close', () => {
+        successModal.returnValue = '';
+        preview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      validateEmailFormat();
       const data = new FormData(form);
       const hari = data.getAll('hari');
       const validDays = hari.length > 0;
       hariError.hidden = validDays;
+
       if (!form.checkValidity() || !validDays) {
         form.reportValidity();
         return;
       }
 
-      const nama = data.get('nama');
-      document.getElementById('out-nama').textContent = nama;
-      document.getElementById('out-nama-2').textContent = nama;
-      document.getElementById('out-instansi').textContent = data.get('instansi');
-      document.getElementById('out-hari').textContent = hari.join(' & ');
+      const payload = new URLSearchParams();
+      payload.append('emailAddress', data.get('email'));
+      payload.append(ENTRY.nama, data.get('nama'));
+      payload.append(ENTRY.whatsapp, data.get('whatsapp'));
+      payload.append(ENTRY.jabatan, data.get('jabatan'));
+      payload.append(ENTRY.instansi, data.get('instansi'));
+      hari.forEach((h) => payload.append(ENTRY.hari, h));
+      payload.append(ENTRY.consent, CONSENT_VALUE);
 
-      form.hidden = true;
-      if (aside) aside.hidden = true;
-      preview.hidden = false;
-      preview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Mengirim...';
+      let response;
+      try {
+        response = await fetch(GFORM_URL, { method: 'POST', mode: 'no-cors', body: payload });
+      } catch (err) {
+        alert('Gagal mengirim pendaftaran. Periksa koneksi lalu coba lagi.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Daftar Sekarang';
+        return;
+      }
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Daftar Sekarang';
+
+      // Cek apakah response 200 (atau status 0 / opaque response saat mode no-cors pada Google Forms)
+      const isSuccess = response && (response.status === 200 || response.type === 'opaque' || response.ok);
+      if (isSuccess) {
+        const nama = data.get('nama');
+        const email = data.get('email');
+
+        // Isi data modal popup
+        const modalNama = document.getElementById('modal-out-nama');
+        const modalEmail = document.getElementById('modal-out-email');
+        if (modalNama) modalNama.textContent = nama;
+        if (modalEmail) modalEmail.textContent = email;
+
+        // Isi data rincian konfirmasi
+        document.getElementById('out-nama').textContent = nama;
+        document.getElementById('out-nama-2').textContent = nama;
+        document.getElementById('out-instansi').textContent = data.get('instansi');
+        document.getElementById('out-hari').textContent = hari.join(' & ');
+        if (document.getElementById('out-email')) {
+          document.getElementById('out-email').textContent = email;
+        }
+        if (document.getElementById('out-email-meta')) {
+          document.getElementById('out-email-meta').textContent = email;
+        }
+
+        form.hidden = true;
+        if (aside) aside.hidden = true;
+        preview.hidden = false;
+
+        // Buka modal dialog sukses
+        if (successModal) {
+          successModal.showModal();
+        } else {
+          preview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        alert(`Gagal mengirim data pendaftaran (Status: ${response ? response.status : 'unknown'}). Silakan coba beberapa saat lagi.`);
+      }
     });
 
     document.getElementById('reset-form').addEventListener('click', () => {

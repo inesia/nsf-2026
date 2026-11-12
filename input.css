@@ -767,6 +767,132 @@
   }
   .confirm-body a { color: var(--teal); font-weight: 700; }
 
+  /* —— Success Dialog / Modal —— */
+  dialog.success-modal {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    max-width: 520px;
+    width: min(520px, calc(100vw - 32px));
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px -15px rgba(24, 24, 50, 0.35);
+  }
+  dialog:modal {
+    overscroll-behavior: contain;
+  }
+  dialog::backdrop {
+    background: rgba(24, 24, 50, 0.65);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+    overscroll-behavior: contain;
+  }
+  .modal-card {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-header {
+    padding: 24px 24px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid var(--line);
+    background: #ffffff;
+  }
+  .modal-icon-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--teal) 14%, #ffffff);
+    color: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .modal-icon-badge .ico {
+    width: 26px;
+    height: 26px;
+  }
+  .modal-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.25;
+  }
+  .modal-subtitle {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .modal-body {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .modal-greet {
+    margin: 0;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .modal-info-box {
+    background: color-mix(in srgb, var(--teal) 8%, #ffffff);
+    border: 1.5px solid var(--teal);
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .modal-info-box .ico {
+    width: 22px;
+    height: 22px;
+    color: var(--teal);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .modal-info-box strong {
+    display: block;
+    font-size: 14px;
+    color: var(--teal-dark);
+    margin-bottom: 3px;
+  }
+  .modal-info-box p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .modal-email-highlight {
+    color: var(--navy);
+    word-break: break-all;
+  }
+  .modal-hint {
+    margin: 0;
+    font-size: 12.5px;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .modal-footer {
+    padding: 16px 24px 20px;
+    display: flex;
+    justify-content: flex-end;
+    background: var(--mist);
+    border-top: 1px solid var(--line);
+  }
+  .modal-footer button {
+    min-width: 140px;
+  }
+
   /* —— Home: dense layout —— */
   .is-home .section-tight,
   .is-about .section-tight,
